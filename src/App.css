@@ -1,0 +1,140 @@
+body{
+  background-color: beige;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainBody{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+.dateData{
+  display: flex;
+  border:#888;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+  background-color: tan;
+}
+.blockWithData{
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+  margin: 2px;
+  background-color: white;
+}
+.blockWithData:hover {
+  background-color: brown;
+  color: white;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Inner container */
+.react-chatbot-kit-chat-inner-container {
+  /* Controls the inner layout */
+  background-color: tan;
+}
+
+Header
+.react-chatbot-kit-chat-header {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+}
+
+.react-chatbot-kit-chat-message-container {
+  /* Controls the area where messages appear */
+  background-color: tan;
+  height: 400px; /* Control the height of the message area */
+  overflow-y: auto; /* Enables scrolling */
+}
+/* Bot message container */
+.react-chatbot-kit-chat-bot-message-container {
+  /* Container for bot's messages */
+}
+
+/* Bot avatar */
+.react-chatbot-kit-chat-bot-avatar-container {
+  background-color: gre;
+  /* Container for the bot's avatar */
+}
+
+.react-chatbot-kit-chat-bot-avatar {
+  /* The actual avatar element */
+  background-color: tan;
+}
+
+/* Bot message bubble */
+.react-chatbot-kit-chat-bot-message {
+  background-color: beige !important;
+  color: black !important;
+}
+
+/* Arrow pointing to the avatar */
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right-color: beige !important;
+}
+/* User message container */
+.react-chatbot-kit-user-chat-message-container {
+  /* Container for user's messages */
+}
+
+/* User message bubble */
+.react-chatbot-kit-user-chat-message {
+  background-color: brown !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+/* Arrow pointing from the message */
+.react-chatbot-kit-user-chat-message-arrow {
+  border-left-color: brown !important;
+}
+/* Input container */
+.react-chatbot-kit-chat-input-container {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Input field */
+.react-chatbot-kit-chat-input {
+  border-radius: 20px !important;
+  border: 1px solid brown !important;
+  padding: 8px !important;
+}
+
+/* Send button */
+.react-chatbot-kit-chat-btn-send {
+  background-color: brown !important;
+}
+
+/* Send button icon */
+.react-chatbot-kit-chat-btn-send-icon {
+  fill: white !important;
+  border-radius: 20px;
+}
