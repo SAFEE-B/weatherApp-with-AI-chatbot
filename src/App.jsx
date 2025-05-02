@@ -151,6 +151,7 @@ const handleLogout = () => {
       console.error("Sign out error:", error);
     });
     setisCheckingAuthState(false)
+    setSignupState(false)
 };
 
   return (
