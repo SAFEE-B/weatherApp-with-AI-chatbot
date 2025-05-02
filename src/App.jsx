@@ -11,6 +11,9 @@ import Signup from './components/signup'
 import {auth} from './firebase/firebase'
 import { onAuthStateChanged } from 'firebase/auth';
 import { signOut } from 'firebase/auth';
+import { ClipLoader } from "react-spinners";
+
+
 // ShowWeatherComponent now ONLY displays weather
 const ShowWeatherComponent = ({ data }) => {
   const dates = Object.keys(data);
@@ -155,14 +158,23 @@ const handleLogout = () => {
 };
 
   return (
-    (!isCheckingAuthState&&(
+
+    
+    
+    (isCheckingAuthState?
+    (<div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <ClipLoader color="#3498db" size={50} />
+      </div>)
+    :(
     <div>
       <h1>Weather App</h1>
 
       {IsLoggedIn ? (
         <>
               <button onClick={handleLogout} >Log Out</button>
-          {loading && <div>Loading...</div>}
+          {loading &&(<div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <ClipLoader color="#3498db" size={50} />
+      </div>)}
           {error && <div style={{ color: 'red' }}>Error: {error}</div>}
           <p>
             Location: {location.latitude ? `Lat: ${location.latitude}, Lon: ${location.longitude}, City: ${cityName}` : (error ? 'Not available' : 'Getting location...')}
